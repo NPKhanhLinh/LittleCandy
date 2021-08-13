@@ -1,0 +1,322 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+        body {
+            height: 100%;
+            background-image: url('./img/bg.jpg');
+            background-size: cover;
+
+            background-repeat: no-repeat;
+        }
+
+        ul,
+        li,
+        ol {
+            list-style: none;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            margin: 300px auto;
+            position: relative;
+            transform-style: preserve-3d;
+            transform: rotateX(12deg);
+            animation: move 10s linear infinite;
+        }
+
+        .minbox {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 50px;
+            top: 50px;
+            transform-style: preserve-3d;
+        }
+
+        .minbox li {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        /* 正面 */
+        .minbox li:nth-child(1) {
+            background: url("img/1mini.jpg") no-repeat 0 0;
+            transform: translateZ(50px);
+        }
+
+        /* 背面 */
+        .minbox li:nth-child(2) {
+            background: url("img/3mini.jpg") no-repeat 0 0;
+            transform: rotateX(180deg) rotate(180deg) translateZ(50px);
+        }
+
+        /* 下面 */
+        .minbox li:nth-child(3) {
+
+            -webkit-transform: rotateX(-90deg) translateZ(50px);
+        }
+
+        /* 上面 */
+        .minbox li:nth-child(4) {
+
+            -webkit-transform: rotateX(90deg) translateZ(50px);
+
+        }
+
+        /* 左边 */
+        .minbox li:nth-child(5) {
+            background: url("img/5.jpg") no-repeat 0 0;
+            -webkit-transform: rotateY(-90deg) translateZ(50px);
+        }
+
+        /* 右边 */
+        .minbox li:nth-child(6) {
+            background: url("img/6.jpg") no-repeat 0 0;
+            -webkit-transform: rotateY(90deg) translateZ(50px);
+        }
+
+
+        .maxbox {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform-style: preserve-3d;
+        }
+
+        .maxbox li {
+            width: 200px;
+            height: 200px;
+            background: #fff;
+            border: 1px solid #ccc;
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0.9;
+            transition: all 1s ease;
+        }
+
+        /* 正面 */
+        .maxbox li:nth-child(1) {
+            background: url("img/theme.jpg") no-repeat 0 0;
+            -webkit-transform: translateZ(100px);
+        }
+
+        /* 背面 */
+        .maxbox li:nth-child(2) {
+            opacity: 0;
+            -webkit-transform: rotateX(180deg) translateZ(100px);
+        }
+
+        /* 下面 */
+        .maxbox li:nth-child(3) {
+            background: url("img/hoa.jpg") no-repeat 0 0;
+            -webkit-transform: rotateX(-90deg) translateZ(100px);
+        }
+
+        /* 上面 */
+        .maxbox li:nth-child(4) {
+            background: url("img/hoa.jpg") no-repeat 0 0;
+            -webkit-transform: rotateX(90deg) translateZ(100px);
+        }
+
+        /* 左边 */
+        .maxbox li:nth-child(5) {
+            background: url("img/4.jpg") no-repeat 0 0;
+            -webkit-transform: rotateY(-90deg) translateZ(100px);
+        }
+
+        /* 右边 */
+        .maxbox li:nth-child(6) {
+            background: url("img/2.jpg") no-repeat 0 0;
+            -webkit-transform: rotateY(90deg) translateZ(100px);
+        }
+
+        .box:hover ol li:nth-child(1) {
+            background: url("img/theme.jpg") no-repeat 0 0;
+            -webkit-transform: translateZ(300px);
+        }
+
+        .box:hover ol li:nth-child(2) {
+
+            -webkit-transform: rotateX(180deg) translateZ(300px);
+        }
+
+        .box:hover ol li:nth-child(3) {
+            background: url("img/hoa.jpg") no-repeat 0 0;
+            -webkit-transform: rotateX(-90deg) translateZ(300px);
+        }
+
+        .box:hover ol li:nth-child(4) {
+            background: url("img/hoa.jpg") no-repeat 0 0;
+            -webkit-transform: rotateX(90deg) translateZ(300px);
+        }
+
+        .box:hover ol li:nth-child(5) {
+            background: url("img/4.jpg") no-repeat 0 0;
+            -webkit-transform: rotateY(-90deg) translateZ(300px);
+        }
+
+        .box:hover ol li:nth-child(6) {
+            background: url("img/2.jpg") no-repeat 0 0;
+            -webkit-transform: rotateY(90deg) translateZ(300px);
+        }
+
+        @keyframes move {
+            0% {
+                transform: rotateX(13deg) rotateY(0deg);
+            }
+
+            100% {
+                transform: rotateX(13deg) rotateY(360deg);
+            }
+        }
+
+        .office-banner {
+            background-color: #e2ddd8;
+            font-family: "Arial";
+            padding: 0.125em;
+            font-size: 4em;
+            text-align: center;
+            white-space: nowrap;
+            transform: rotate(-10deg);
+            position: fixed;
+            top: 40%;
+            left: -5%;
+            right: -5%;
+            z-index: 100;
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <ul class="minbox">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ol class="maxbox">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </div>
+    <!-- <iframe src="img/mp3.mp3" allow="autoplay" id="audio" style="display: none"></iframe> -->
+    <audio id="bgmusic" autoplay preload loop controls></audio>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+<script>
+
+
+    (function () {
+        function log(info) {
+            console.log(info);
+            // alert(info);
+        }
+        function forceSafariPlayAudio() {
+            audioEl.load(); // iOS 9   还需要额外的 load 一下, 否则直接 play 无效
+            audioEl.play(); // iOS 7/8 仅需要 play 一下
+        }
+
+        var audioEl = document.getElementById('bgmusic');
+
+        // 可以自动播放时正确的事件顺序是
+        // loadstart
+        // loadedmetadata
+        // loadeddata
+        // canplay
+        // play
+        // playing
+        // 
+        // 不能自动播放时触发的事件是
+        // iPhone5  iOS 7.0.6 loadstart
+        // iPhone6s iOS 9.1   loadstart -> loadedmetadata -> loadeddata -> canplay
+        audioEl.addEventListener('loadstart', function () {
+            log('loadstart');
+        }, false);
+        audioEl.addEventListener('loadeddata', function () {
+            log('loadeddata');
+        }, false);
+        audioEl.addEventListener('loadedmetadata', function () {
+            log('loadedmetadata');
+        }, false);
+        audioEl.addEventListener('canplay', function () {
+            log('canplay');
+        }, false);
+        audioEl.addEventListener('play', function () {
+            log('play');
+            // 当 audio 能够播放后, 移除这个事件
+            window.removeEventListener('touchstart', forceSafariPlayAudio, false);
+        }, false);
+        audioEl.addEventListener('playing', function () {
+            log('playing');
+        }, false);
+        audioEl.addEventListener('pause', function () {
+            log('pause');
+        }, false);
+
+        // 由于 iOS Safari 限制不允许 audio autoplay, 必须用户主动交互(例如 click)后才能播放 audio,
+        // 因此我们通过一个用户交互事件来主动 play 一下 audio.
+        window.addEventListener('touchstart', forceSafariPlayAudio, false);
+
+        audioEl.src = 'img/mp3.mp3';
+    })();
+    //var colors = ["#8b5642", "#6a696b"];
+    var colors = ["#ed3f1c"];
+    var colors1 = ["#eded1c"];
+    function frame() {
+        confetti({
+            particleCount: 1,
+            angle: 60,
+            spread: 55,
+            origin: { x: 0 },
+            colors: colors,
+        });
+        confetti({
+            particleCount: 1,
+            angle: 120,
+            spread: 55,
+            origin: { x: 1 },
+            colors: colors1,
+        });
+
+        if (Date.now() < Date.now() + 11) {
+            requestAnimationFrame(frame);
+        }
+    }
+
+
+
+    window.onload = frame();
+
+</script>
+
+</html>
