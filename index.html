@@ -1,436 +1,303 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--[if gte mso 9]>
+<xml>
+  <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+  </o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="x-apple-disable-message-reformatting">
+  <!--[if !mso]><!--><meta http-equiv="X-UA-Compatible" content="IE=edge"><!--<![endif]-->
+  <title></title>
+  
+    <style type="text/css">
+      table, td { color: #000000; } a { color: #0000ee; text-decoration: underline; }
+@media only screen and (min-width: 620px) {
+  .u-row {
+    width: 600px !important;
+  }
+  .u-row .u-col {
+    vertical-align: top;
+  }
 
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
+  .u-row .u-col-100 {
+    width: 600px !important;
+  }
 
+}
 
+@media (max-width: 620px) {
+  .u-row-container {
+    max-width: 100% !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .u-row .u-col {
+    min-width: 320px !important;
+    max-width: 100% !important;
+    display: block !important;
+  }
+  .u-row {
+    width: calc(100% - 40px) !important;
+  }
+  .u-col {
+    width: 100% !important;
+  }
+  .u-col > div {
+    margin: 0 auto;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+}
 
-        body {
-            height: 100%;
-            background-image: url('./img/bg.jpg');
-            background-size: cover;
+table,
+tr,
+td {
+  vertical-align: top;
+  border-collapse: collapse;
+}
 
-            background-repeat: no-repeat;
-        }
+p {
+  margin: 0;
+}
 
-        ul,
-        li,
-        ol {
-            list-style: none;
-        }
+.ie-container table,
+.mso-container table {
+  table-layout: fixed;
+}
 
+* {
+  line-height: inherit;
+}
 
-      
+a[x-apple-data-detectors='true'] {
+  color: inherit !important;
+  text-decoration: none !important;
+}
 
+</style>
+  
+  
 
-        @media only screen and (max-width: 480px) and (min-width: 380px) {
-            .box {
-                width: 200px;
-                height: 200px;
-                margin-top: 205px;
-                margin-bottom: 361px;
-                margin-left: auto;
-                margin-right: auto;
-                position: relative;
-                transform-style: preserve-3d;
-                transform: rotateX(12deg);
-                animation: move 10s linear infinite;
-            }
+<!--[if !mso]><!--><link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet" type="text/css"><!--<![endif]-->
 
-        }
-        /* 5 inch Pixel */
-        @media only screen and (max-width: 411px) and (min-width: 823px) {
-            .box {
-                width: 200px;
-                height: 200px;
-                margin-top: 205px;
-                margin-bottom: 361px;
-                margin-left: auto;
-                margin-right: auto;
-                position: relative;
-                transform-style: preserve-3d;
-                transform: rotateX(12deg);
-                animation: move 10s linear infinite;
-            }
-
-        }
-
-
-
-        /* ipad*/
-        @media only screen and (max-width: 768px)and (min-height:1024px) {
-            .box {
-                width: 200px;
-                height: 200px;
-                margin: 300px auto;
-                position: relative;
-                transform-style: preserve-3d;
-                transform: rotateX(12deg);
-                animation: move 10s linear infinite;
-            }
-
-        }
-
-        
-        @media only screen and (min-width:1000px) {
-            .box {
-                width: 200px;
-                height: 200px;
-                margin: 339px auto;
-                position: relative;
-                transform-style: preserve-3d;
-                transform: rotateX(12deg);
-                animation: move 10s linear infinite;
-            }
-
-        }
-
-        /* dùng cho ip6/7/8 plus*/
-        @media only screen and (max-width: 415px) and (max-height: 736px) {
-            .box {
-                width: 200px;
-                height: 200px;
-                margin-top: 205px;
-                margin-bottom: 280px;
-                ;
-                margin-left: auto;
-                margin-right: auto;
-                position: relative;
-                transform-style: preserve-3d;
-                transform: rotateX(12deg);
-                animation: move 10s linear infinite;
-            }}
-
-            /* dùng cho ipX */
-            @media only screen and (max-width: 375px)and (min-height: 812px) {
-                .box {
-                    width: 200px;
-                    height: 200px;
-                    margin-top: 205px;
-                    margin-bottom: 358px;
-                    margin-left: auto;
-                    margin-right: auto;
-                    position: relative;
-                    transform-style: preserve-3d;
-                    transform: rotateX(12deg);
-                    animation: move 10s linear infinite;
-                }
-
-            }
-
-            /* dùng cho ip 6/7/8 */
-            /* dùng cho ip6/7/8 */
-        @media only screen and (max-width: 375px) and (max-height:667px) {
-            .box {
-                width: 200px;
-                height: 200px;
-                margin: 205px auto;
-                position: relative;
-                transform-style: preserve-3d;
-                transform: rotateX(12deg);
-                animation: move 10s linear infinite;
-            }
-
-        }
-
-            /* .box {
-            width: 200px;
-            height: 200px;
-            margin: 300px auto;
-            position: relative;
-            transform-style: preserve-3d;
-            transform: rotateX(12deg);
-            animation: move 10s linear infinite;
-        } */
-
-            .minbox {
-                width: 100px;
-                height: 100px;
-                position: absolute;
-                left: 50px;
-                top: 50px;
-                transform-style: preserve-3d;
-            }
-
-            .minbox li {
-                width: 100px;
-                height: 100px;
-                position: absolute;
-                top: 0;
-                left: 0;
-            }
-
-            /* 正面 */
-            .minbox li:nth-child(1) {
-                background: url("img/1mini.jpg") no-repeat 0 0;
-                transform: translateZ(50px);
-            }
-
-            /* 背面 */
-            .minbox li:nth-child(2) {
-                background: url("img/3mini.jpg") no-repeat 0 0;
-                transform: rotateX(180deg) rotate(180deg) translateZ(50px);
-            }
-
-            /* 下面 */
-            .minbox li:nth-child(3) {
-                background: url("img/hoamini.jpg") no-repeat 0 0;
-                -webkit-transform: rotateX(-90deg) translateZ(50px);
-            }
-
-            /* 上面 */
-            .minbox li:nth-child(4) {
-                background: url("img/hoamini.jpg") no-repeat 0 0;
-                -webkit-transform: rotateX(90deg) translateZ(50px);
-
-            }
-
-            /* 左边 */
-            .minbox li:nth-child(5) {
-                background: url("img/2mini.jpg") no-repeat 0 0;
-                -webkit-transform: rotateY(-90deg) translateZ(50px);
-            }
-
-            /* 右边 */
-            .minbox li:nth-child(6) {
-                background: url("img/6.jpg") no-repeat 0 0;
-                -webkit-transform: rotateY(90deg) translateZ(50px);
-            }
-
-
-            .maxbox {
-                width: 200px;
-                height: 200px;
-                position: absolute;
-                left: 0;
-                top: 0;
-                transform-style: preserve-3d;
-            }
-
-            .maxbox li {
-                width: 200px;
-                height: 200px;
-                background: #fff;
-                border: 1px solid #ccc;
-                position: absolute;
-                left: 0;
-                top: 0;
-                opacity: 0.9;
-                transition: all 1s ease;
-            }
-
-            /* 正面 */
-            .maxbox li:nth-child(1) {
-                background: url("img/1core.jpg") no-repeat 0 0;
-                -webkit-transform: translateZ(100px);
-            }
-
-            /* 背面 */
-            .maxbox li:nth-child(2) {
-                opacity: 0;
-                -webkit-transform: rotateX(180deg) translateZ(100px);
-            }
-
-            /* 下面 */
-            .maxbox li:nth-child(3) {
-                background: url("img/hoa.jpg") no-repeat 0 0;
-                -webkit-transform: rotateX(-90deg) translateZ(100px);
-            }
-
-            /* 上面 */
-            .maxbox li:nth-child(4) {
-                background: url("img/hoa.jpg") no-repeat 0 0;
-                -webkit-transform: rotateX(90deg) translateZ(100px);
-            }
-
-            /* 左边 */
-            .maxbox li:nth-child(5) {
-                background: url("img/3.jpg") no-repeat 0 0;
-                -webkit-transform: rotateY(-90deg) translateZ(100px);
-            }
-
-            /* 右边 */
-            .maxbox li:nth-child(6) {
-                background: url("img/2.jpg") no-repeat 0 0;
-                -webkit-transform: rotateY(90deg) translateZ(100px);
-            }
-
-            .box:hover ol li:nth-child(1) {
-                background: url("img/1core.jpg") no-repeat 0 0;
-                -webkit-transform: translateZ(300px);
-            }
-
-            .box:hover ol li:nth-child(2) {
-
-                -webkit-transform: rotateX(180deg) translateZ(300px);
-            }
-
-            .box:hover ol li:nth-child(3) {
-                background: url("img/hoa.jpg") no-repeat 0 0;
-                -webkit-transform: rotateX(-90deg) translateZ(300px);
-            }
-
-            .box:hover ol li:nth-child(4) {
-                background: url("img/hoa.jpg") no-repeat 0 0;
-                -webkit-transform: rotateX(90deg) translateZ(300px);
-            }
-
-            .box:hover ol li:nth-child(5) {
-                background: url("img/3.jpg") no-repeat 0 0;
-                -webkit-transform: rotateY(-90deg) translateZ(300px);
-            }
-
-            .box:hover ol li:nth-child(6) {
-                background: url("img/2.jpg") no-repeat 0 0;
-                -webkit-transform: rotateY(90deg) translateZ(300px);
-            }
-
-            @keyframes move {
-                0% {
-                    transform: rotateX(13deg) rotateY(0deg);
-                }
-
-                100% {
-                    transform: rotateX(13deg) rotateY(360deg);
-                }
-            }
-
-            .office-banner {
-                background-color: #e2ddd8;
-                font-family: "Arial";
-                padding: 0.125em;
-                font-size: 4em;
-                text-align: center;
-                white-space: nowrap;
-                transform: rotate(-10deg);
-                position: fixed;
-                top: 40%;
-                left: -5%;
-                right: -5%;
-                z-index: 100;
-                margin-top: 0;
-            }
-    </style>
 </head>
 
-<body>
+<body class="clean-body" style="margin: 0;padding: 0;-webkit-text-size-adjust: 100%;background-color: #ffffff;color: #000000">
+  <!--[if IE]><div class="ie-container"><![endif]-->
+  <!--[if mso]><div class="mso-container"><![endif]-->
+  <table style="border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;min-width: 320px;Margin: 0 auto;background-color: #ffffff;width:100%" cellpadding="0" cellspacing="0">
+  <tbody>
+  <tr style="vertical-align: top">
+    <td style="word-break: break-word;border-collapse: collapse !important;vertical-align: top">
+    <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td align="center" style="background-color: #ffffff;"><![endif]-->
+    
 
-    <div class="box">
-        <ul class="minbox">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-        <ol class="maxbox">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ol>
+<div class="u-row-container" style="padding: 0px 10px;background-color: rgba(255,255,255,0)">
+  <div class="u-row" style="Margin: 0 auto;min-width: 320px;max-width: 600px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: #b5e0ff;">
+    <div style="border-collapse: collapse;display: table;width: 100%;background-color: transparent;">
+      <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding: 0px 10px;background-color: rgba(255,255,255,0);" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px;"><tr style="background-color: #b5e0ff;"><![endif]-->
+      
+<!--[if (mso)|(IE)]><td align="center" width="600" style="width: 600px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;" valign="top"><![endif]-->
+<div class="u-col u-col-100" style="max-width: 320px;min-width: 600px;display: table-cell;vertical-align: top;">
+  <div style="width: 100% !important;">
+  <!--[if (!mso)&(!IE)]><!--><div style="padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;"><!--<![endif]-->
+  
+<table style="font-family:'Raleway',sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+  <tbody>
+    <tr>
+      <td style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:'Raleway',sans-serif;" align="left">
+        
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr>
+    <td style="padding-right: 0px;padding-left: 0px;" align="center">
+      
+      <img align="center" border="0" src="images/image-1.png" alt="Image" title="Image" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 100%;max-width: 100px;" width="100"/>
+      
+    </td>
+  </tr>
+</table>
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="font-family:'Raleway',sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+  <tbody>
+    <tr>
+      <td style="overflow-wrap:break-word;word-break:break-word;padding:16px 20px 8px;font-family:'Raleway',sans-serif;" align="left">
+        
+  <div style="color: #ffffff; line-height: 120%; text-align: center; word-wrap: break-word;">
+    <p style="font-size: 14px; line-height: 120%;"><strong><span style="font-size: 48px; line-height: 57.6px; font-family: Raleway, sans-serif;">Happy Birthday!</span></strong></p>
+  </div>
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="font-family:'Raleway',sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+  <tbody>
+    <tr>
+      <td style="overflow-wrap:break-word;word-break:break-word;padding:22px 0px 0px;font-family:'Raleway',sans-serif;" align="left">
+        
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr>
+    <td style="padding-right: 0px;padding-left: 0px;" align="center">
+      
+      <img align="center" border="0" src="images/image-2.png" alt="Image" title="Image" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 100%;max-width: 564px;" width="564"/>
+      
+    </td>
+  </tr>
+</table>
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="font-family:'Raleway',sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+  <tbody>
+    <tr>
+      <td style="overflow-wrap:break-word;word-break:break-word;padding:15px 20px 14px;font-family:'Raleway',sans-serif;" align="left">
+        
+  <div style="color: #ffffff; line-height: 120%; text-align: center; word-wrap: break-word;">
+    <p style="font-size: 14px; line-height: 120%;"><span style="font-size: 30px; line-height: 36px; font-family: arial, helvetica, sans-serif;">Nguyễn Thị Th&uacute;y</span></p>
+  </div>
+  <div style="color: #ffffff; line-height: 120%; text-align: center; word-wrap: break-word;">
+    <p style="font-size: 14px; line-height: 120%;"><span style="font-size: 30px; line-height: 36px; font-family: arial, helvetica, sans-serif;">17/8</span></p>
+  </div>
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="font-family:'Raleway',sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+  <tbody>
+    <tr>
+      <td style="overflow-wrap:break-word;word-break:break-word;padding:10px 20px;font-family:'Raleway',sans-serif;" align="left">
+        
+  <div style="color: #e34c1e; line-height: 140%; text-align: center; word-wrap: break-word;">
+    <p style="line-height: 140%; font-size: 14px;"><span style="font-size: 18px; line-height: 25.2px; font-family: arial, helvetica, sans-serif;">---------------------oo00oo-------------------</span></p>
+  </div>
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="font-family:'Raleway',sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+  <tbody>
+    <tr>
+      <td style="overflow-wrap:break-word;word-break:break-word;padding:10px 20px;font-family:'Raleway',sans-serif;" align="left">
+        
+  <div style="color: #ffffff; line-height: 140%; text-align: center; word-wrap: break-word;">
+    <p style="line-height: 140%; font-size: 14px; text-align: left;"><span style="font-size: 20px; line-height: 28px; font-family: arial, helvetica, sans-serif;">Ch&agrave;o Em,</span></p>
+<p style="line-height: 140%; font-size: 14px; text-align: left;"><span style="font-size: 20px; line-height: 28px; font-family: arial, helvetica, sans-serif;">Anh ch&uacute;c <span style="line-height: 28px; font-size: 20px;">Em</span> sinh nhật vui vẻ hơn, may mắn hơn, c&ocirc;ng việc ph&aacute;t triển hơn n&oacute;i chung c&aacute;i g&igrave; cũng hơn bất kỳ ai kh&aacute;c đ&atilde; ch&uacute;c Em!</span></p>
+  </div>
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="font-family:'Raleway',sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+  <tbody>
+    <tr>
+      <td style="overflow-wrap:break-word;word-break:break-word;padding:15px 20px 20px;font-family:'Raleway',sans-serif;" align="left">
+        
+  <div style="color: #9c9c9c; line-height: 160%; text-align: center; word-wrap: break-word;">
+    <p style="font-size: 14px; line-height: 160%;"><span style="font-family: 'times new roman', times; font-size: 24px; line-height: 38.4px;">Tận hưởng ng&agrave;y sinh nhật vui vẻ nh&eacute;!</span></p>
+<p style="font-size: 14px; line-height: 160%;"><span style="font-family: 'times new roman', times; font-size: 24px; line-height: 38.4px;">Đ&oacute;n chờ điều bất ngờ ph&iacute;a sau đ&acirc;y.</span></p>
+<p style="line-height: 160%; font-size: 14px;"><span style="font-size: 24px; line-height: 38.4px;">L.K</span></p>
+  </div>
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="font-family:'Raleway',sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+  <tbody>
+    <tr>
+      <td style="overflow-wrap:break-word;word-break:break-word;padding:15px 20px 25px;font-family:'Raleway',sans-serif;" align="left">
+        
+<div align="center">
+  <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;font-family:'Raleway',sans-serif;"><tr><td style="font-family:'Raleway',sans-serif;" align="center"><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="" style="height:54px; v-text-anchor:middle; width:188px;" arcsize="18.5%" strokecolor="#ffffff" strokeweight="2px" fillcolor="#e34c1e"><w:anchorlock/><center style="color:#FFF;font-family:'Raleway',sans-serif;"><![endif]-->
+    <a href="indexcore.html"  style="box-sizing: border-box;display: inline-block;font-family:'Raleway',sans-serif;text-decoration: none;-webkit-text-size-adjust: none;text-align: center;color: #FFF; background-color: #e34c1e; border-radius: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px; width:auto; max-width:100%; overflow-wrap: break-word; word-break: break-word; word-wrap:break-word; mso-border-alt: none;border-top-color: #ffffff; border-top-style: solid; border-top-width: 2px; border-left-color: #ffffff; border-left-style: solid; border-left-width: 2px; border-right-color: #ffffff; border-right-style: solid; border-right-width: 2px; border-bottom-color: #ffffff; border-bottom-style: solid; border-bottom-width: 2px;">
+      <span style="display:block;padding:13px 22px;line-height:120%;"><span style="font-size: 24px; line-height: 28.8px; font-family: arial, helvetica, sans-serif;">Nhấn v&agrave;o &gt;&gt; </span></span>
+    </a>
+  <!--[if mso]></center></v:roundrect></td></tr></table><![endif]-->
+</div>
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+  <!--[if (!mso)&(!IE)]><!--></div><!--<![endif]-->
+  </div>
+</div>
+<!--[if (mso)|(IE)]></td><![endif]-->
+      <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
     </div>
-    <!-- <iframe src="img/mp3.mp3" allow="autoplay" id="audio" style="display: none"></iframe> -->
-    <audio id="bgmusic" autoplay preload loop controls></audio>
+  </div>
+</div>
+
+
+
+<!-- <div class="u-row-container" style="padding: 0px 10px;background-color: rgba(255,255,255,0)">
+  <div class="u-row" style="Margin: 0 auto;min-width: 320px;max-width: 600px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
+    <div style="border-collapse: collapse;display: table;width: 100%;background-color: transparent;">
+      <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding: 0px 10px;background-color: rgba(255,255,255,0);" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px;"><tr style="background-color: transparent;"><![endif]-->
+      
+<!--[if (mso)|(IE)]><td align="center" width="600" style="width: 600px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;" valign="top"><![endif]-->
+<div class="u-col u-col-100" style="max-width: 320px;min-width: 600px;display: table-cell;vertical-align: top;">
+  <div style="width: 100% !important;">
+  <!--[if (!mso)&(!IE)]><!--><div style="padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;"><!--<![endif]-->
+  
+  <!--[if (!mso)&(!IE)]><!--></div><!--<![endif]-->
+  </div>
+</div> -->
+<!--[if (mso)|(IE)]></td><![endif]-->
+      <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
+    </div>
+  </div>
+</div>
+
+<!--  -->
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+  <!--[if (!mso)&(!IE)]><!--></div><!--<![endif]-->
+  </div>
+</div>
+<!--[if (mso)|(IE)]></td><![endif]-->
+      <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
+    </div>
+  </div>
+</div>
+
+
+    <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
+    </td>
+  </tr>
+  </tbody>
+  </table>
+  <!--[if mso]></div><![endif]-->
+  <!--[if IE]></div><![endif]-->
 </body>
-<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
-<script>
-
-
-    (function () {
-        function log(info) {
-            console.log(info);
-            // alert(info);
-        }
-        function forceSafariPlayAudio() {
-            audioEl.load(); // iOS 9   还需要额外的 load 一下, 否则直接 play 无效
-            audioEl.play(); // iOS 7/8 仅需要 play 一下
-        }
-
-        var audioEl = document.getElementById('bgmusic');
-
-        // 可以自动播放时正确的事件顺序是
-        // loadstart
-        // loadedmetadata
-        // loadeddata
-        // canplay
-        // play
-        // playing
-        // 
-        // 不能自动播放时触发的事件是
-        // iPhone5  iOS 7.0.6 loadstart
-        // iPhone6s iOS 9.1   loadstart -> loadedmetadata -> loadeddata -> canplay
-        audioEl.addEventListener('loadstart', function () {
-            log('loadstart');
-        }, false);
-        audioEl.addEventListener('loadeddata', function () {
-            log('loadeddata');
-        }, false);
-        audioEl.addEventListener('loadedmetadata', function () {
-            log('loadedmetadata');
-        }, false);
-        audioEl.addEventListener('canplay', function () {
-            log('canplay');
-        }, false);
-        audioEl.addEventListener('play', function () {
-            log('play');
-            // 当 audio 能够播放后, 移除这个事件
-            window.removeEventListener('touchstart', forceSafariPlayAudio, false);
-        }, false);
-        audioEl.addEventListener('playing', function () {
-            log('playing');
-        }, false);
-        audioEl.addEventListener('pause', function () {
-            log('pause');
-        }, false);
-
-        // 由于 iOS Safari 限制不允许 audio autoplay, 必须用户主动交互(例如 click)后才能播放 audio,
-        // 因此我们通过一个用户交互事件来主动 play 一下 audio.
-        window.addEventListener('touchstart', forceSafariPlayAudio, false);
-
-        audioEl.src = 'img/mp3.mp3';
-    })();
-    //var colors = ["#8b5642", "#6a696b"];
-    var colors1 = ["#ed3f1c"];
-    var colors = ["#e3e309"];
-    function frame() {
-        confetti({
-            particleCount: 1,
-            angle: 60,
-            spread: 55,
-            origin: { x: 0 },
-            colors: colors,
-        });
-        confetti({
-            particleCount: 1,
-            angle: 120,
-            spread: 55,
-            origin: { x: 1 },
-            colors: colors1,
-        });
-
-        if (Date.now() < Date.now() + 11) {
-            requestAnimationFrame(frame);
-        }
-    }
-
-
-
-    window.onload = frame();
-
-</script>
 
 </html>
