@@ -126,8 +126,9 @@
 
         /* 背面 */
         .maxbox li:nth-child(2) {
-            opacity: 0;
-            -webkit-transform: rotateX(180deg) translateZ(100px);
+            background: url("img/up.png") no-repeat 0 0;
+            opacity: 1;
+            -webkit-transform: rotateX(180deg) rotate(180deg) translateZ(100px);
         }
 
         /* 下面 */
@@ -160,7 +161,7 @@
         }
 
         .box:hover ol li:nth-child(2) {
-
+            opacity: 0;
             -webkit-transform: rotateX(180deg) translateZ(300px);
         }
 
@@ -296,7 +297,7 @@
                 $(this).addClass('no-hover'); // add the class 'no-hover'
                 });
         }, false);
-        audioEl.src = 'img/mp3.mp3';
+        audioEl.src = 'img/mp3file.mp3';
     })();
     //var colors = ["#8b5642", "#6a696b"];
     var colors1 = ["#ed3f1c"];
