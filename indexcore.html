@@ -286,11 +286,15 @@
         audioEl.addEventListener('pause', function () {
             log('pause');
         }, false);
-
+   
         // 由于 iOS Safari 限制不允许 audio autoplay, 必须用户主动交互(例如 click)后才能播放 audio,
         // 因此我们通过一个用户交互事件来主动 play 一下 audio.
         window.addEventListener('touchstart', forceSafariPlayAudio, false);
-        window.addEventListener('touchstart', forceSafariPlayAudio, false);
+        window.addEventListener('touchstart', function(){
+            $('div').on('click', function() { // when you click the div
+                $(this).addClass('no-hover'); // add the class 'no-hover'
+                });
+        }, false);
         audioEl.src = 'img/mp3.mp3';
     })();
     //var colors = ["#8b5642", "#6a696b"];
